@@ -1,0 +1,1060 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../img/996402.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-image: image(no-repeat); */
+    background-attachment: fixed;
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 130px;
+    left: 34em;
+    /* border: 2px solid #ccc; */
+    padding: 30px;
+    font-family: 'Architects Daughter';
+    letter-spacing: 1px;
+    word-spacing: 2PX;
+}
+
+form {
+    display: inline-block;
+    width: 360px;
+    height: 390px;
+    padding: 50px;
+    margin: 10px;
+    background:transparent;
+    border: 0px solid #907d4e;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 0;body {
+        font-family: Arial, sans-serif;
+        background-image: url(../img/996402.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-image: image(no-repeat); */
+        background-attachment: fixed;
+    
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 130px;
+        left: 34em;
+        /* border: 2px solid #ccc; */
+        padding: 30px;
+        font-family: 'Architects Daughter';
+        letter-spacing: 1px;
+        word-spacing: 2PX;
+    }
+    
+    form {
+        display: inline-block;
+        width: 360px;
+        height: 390px;
+        padding: 50px;
+        margin: 10px;
+        background:transparent;
+        border: 0px solid #907d4e;
+        border-radius: 15px;
+        position: absolute;
+        z-index: 0;
+        top: -50px;
+        right: 40px;
+        box-shadow: -3px 3px 20px rgb(81, 58, 29),-3px 3px 20px rgb(47, 39, 29),-6px -3px 20px rgb(20, 16, 10),-6px -3px 20px rgb(26, 15, 0),8px -3px 20px rgb(22, 10, 0);
+    }
+    
+    /* form [type="submit"] {
+        display: flex;
+        width: 120px;
+        padding: 6px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        color: black;
+        font-size: 18px;
+        font-weight: bolder;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-transform:capitalize;
+        font-family:'Architects Daughter';  
+        border: none;
+        box-shadow: 2px 3px 10px rgb(0, 0, 0),-6px -3px 20px rgb(10, 2, 17),8px -3px 20px rgb(22, 10, 0);
+        position: relative;
+        left: 25px;
+    } */
+    
+    
+    
+    form [type="submit"] {
+        width: 120px;
+        padding: 6px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        color: black;
+        font-size: 18px;
+        font-weight: bolder;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-transform:capitalize;
+        font-family:'Architects Daughter';  
+        border: none;
+        box-shadow: 2px 3px 10px rgb(42, 13, 150),-6px -3px 20px rgb(10, 2, 17),8px -3px 20px rgb(22, 10, 0);
+        position: relative;
+        left: 30px;
+       
+    } 
+    
+    
+    form [type="button"] {
+        width: 120px;
+        padding: 6px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        color: black;
+        font-size: 18px;
+        font-weight: bolder;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-transform:capitalize;
+        font-family:'Architects Daughter';  
+        border: none;
+        box-shadow: 2px 3px 10px rgb(42, 13, 150),-6px -3px 20px rgb(10, 2, 17),8px -3px 20px rgb(22, 10, 0);
+        position: relative;
+        left: 40px;
+       
+    } 
+    form label{
+        width: 200px;
+        padding: 10px;
+        background: transparent;
+        position: relative;
+        bottom: 10px;
+    }
+    form input{
+        width: 300px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 14px;
+        border: none;
+        font-weight: bold;
+        background:transparent;
+        color: black;
+        
+        box-shadow: -3px 3px 5px rgb(172, 119, 49),-6px -3px 20px rgb(171, 124, 57),8px -3px 20px rgb(22, 10, 0);
+    }
+    form h2 {
+        text-align: center;
+        padding: 1px;
+        font-size: 32px;
+        font-weight: bolder;
+        /* font-language-override: initial;*/
+        font-family: 'Audiowide';
+        position: relative;
+        bottom: 10px;
+        letter-spacing: 2px;
+    }
+    
+    #input_username{
+        padding:12px;
+        height: 20px;
+        width: 300px;
+        font-family:'Macondo';
+        font-weight: 500;
+        font-size: 16px;
+        color: black;
+        letter-spacing: 2px;
+        font-weight: 600;
+        
+        
+    }
+    #password{
+        padding:12px;
+        height: 20px;
+        width: 300px;
+        position:relative;
+        top: 10px;
+        font-family:'Macondo';
+        font-weight: 500;
+        font-size: 16px;
+        color: black;
+        letter-spacing: 2px;
+        font-weight: 600;
+    
+    }
+    #eye{
+        position: relative;
+        top: 12px;
+        right: 40px;
+        height: auto;
+    
+    }
+    #lab_password{
+        position:relative;
+        top: 1px;
+        font-weight: 700;
+        font-size:large
+    }
+    #lab_username{
+        position:relative;
+       
+        font-weight: 700;
+        font-size:large
+    }
+    form button[type="submit"]:hover {
+        background-color: #4305ee;
+    }
+    form button[type="button"]:hover {
+        background-color: #f60000;
+       
+    }
+    a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: 800;
+        text-transform: capitalize;
+        text-shadow:2px 2px 4px rgb(94, 50, 50),-6px -3px 20px rgb(224, 174, 34),8px -3px 20px rgb(22, 10, 0);
+    }
+    p a {
+        text-decoration: none;
+        color: rgb(4, 3, 3);
+        font-weight: 800;
+        font-size: 18PX;
+    
+    }
+    p{
+        font-size:18px; 
+        width: 400px;
+        padding: 10px;
+        font-weight: 600;
+        position: relative;
+        right: 20px;
+    }
+    p a:hover{
+        color: rgb(255, 255, 255);
+        text-decoration:double;
+        margin: 5px;
+        
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url(../img/996402.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-image: image(no-repeat); */
+        background-attachment: fixed;
+    
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 130px;
+        left: 34em;
+        /* border: 2px solid #ccc; */
+        padding: 30px;
+        font-family: 'Architects Daughter';
+        letter-spacing: 1px;
+        word-spacing: 2PX;
+    }
+    
+    form {
+        display: inline-block;
+        width: 360px;
+        height: 390px;
+        padding: 50px;
+        margin: 10px;
+        background:transparent;
+        border: 0px solid #907d4e;
+        border-radius: 15px;
+        position: absolute;
+        z-index: 0;
+        top: -50px;
+        right: 40px;
+        box-shadow: -3px 3px 20px rgb(81, 58, 29),-3px 3px 20px rgb(47, 39, 29),-6px -3px 20px rgb(20, 16, 10),-6px -3px 20px rgb(26, 15, 0),8px -3px 20px rgb(22, 10, 0);
+    }
+    
+    /* form [type="submit"] {
+        display: flex;
+        width: 120px;
+        padding: 6px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        color: black;
+        font-size: 18px;
+        font-weight: bolder;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-transform:capitalize;
+        font-family:'Architects Daughter';  
+        border: none;
+        box-shadow: 2px 3px 10px rgb(0, 0, 0),-6px -3px 20px rgb(10, 2, 17),8px -3px 20px rgb(22, 10, 0);
+        position: relative;
+        left: 25px;
+    } */
+    
+    
+    
+    form [type="submit"] {
+        width: 120px;
+        padding: 6px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        color: black;
+        font-size: 18px;
+        font-weight: bolder;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-transform:capitalize;
+        font-family:'Architects Daughter';  
+        border: none;
+        box-shadow: 2px 3px 10px rgb(42, 13, 150),-6px -3px 20px rgb(10, 2, 17),8px -3px 20px rgb(22, 10, 0);
+        position: relative;
+        left: 30px;
+       
+    } 
+    
+    
+    form [type="button"] {
+        width: 120px;
+        padding: 6px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        color: black;
+        font-size: 18px;
+        font-weight: bolder;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-transform:capitalize;
+        font-family:'Architects Daughter';  
+        border: none;
+        box-shadow: 2px 3px 10px rgb(42, 13, 150),-6px -3px 20px rgb(10, 2, 17),8px -3px 20px rgb(22, 10, 0);
+        position: relative;
+        left: 40px;
+       
+    } 
+    form label{
+        width: 200px;
+        padding: 10px;
+        background: transparent;
+        position: relative;
+        bottom: 10px;
+    }
+    form input{
+        width: 300px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 14px;
+        border: none;
+        font-weight: bold;
+        background:transparent;
+        color: black;
+        
+        box-shadow: -3px 3px 5px rgb(172, 119, 49),-6px -3px 20px rgb(171, 124, 57),8px -3px 20px rgb(22, 10, 0);
+    }
+    form h2 {
+        text-align: center;
+        padding: 1px;
+        font-size: 32px;
+        font-weight: bolder;
+        /* font-language-override: initial;*/
+        font-family: 'Audiowide';
+        position: relative;
+        bottom: 10px;
+        letter-spacing: 2px;
+    }
+    
+    #input_username{
+        padding:12px;
+        height: 20px;
+        width: 300px;
+        font-family:'Macondo';
+        font-weight: 500;
+        font-size: 16px;
+        color: black;
+        letter-spacing: 2px;
+        font-weight: 600;
+        
+        
+    }
+    #password{
+        padding:12px;
+        height: 20px;
+        width: 300px;
+        position:relative;
+        top: 10px;
+        font-family:'Macondo';
+        font-weight: 500;
+        font-size: 16px;
+        color: black;
+        letter-spacing: 2px;
+        font-weight: 600;
+    
+    }
+    #eye{
+        position: relative;
+        top: 12px;
+        right: 40px;
+        height: auto;
+    
+    }
+    #lab_password{
+        position:relative;
+        top: 1px;
+        font-weight: 700;
+        font-size:large
+    }
+    #lab_username{
+        position:relative;
+       
+        font-weight: 700;
+        font-size:large
+    }
+    form button[type="submit"]:hover {
+        background-color: #4305ee;
+    }
+    form button[type="button"]:hover {
+        background-color: #f60000;
+       
+    }
+    a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: 800;
+        text-transform: capitalize;
+        text-shadow:2px 2px 4px rgb(94, 50, 50),-6px -3px 20px rgb(224, 174, 34),8px -3px 20px rgb(22, 10, 0);
+    }
+    p a {
+        text-decoration: none;
+        color: rgb(4, 3, 3);
+        font-weight: 800;
+        font-size: 18PX;
+    
+    }
+    p{
+        font-size:18px; 
+        width: 400px;
+        padding: 10px;
+        font-weight: 600;
+        position: relative;
+        right: 20px;
+    }
+    p a:hover{
+        color: rgb(255, 255, 255);
+        text-decoration:double;
+        margin: 5px;
+        
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url(../img/996402.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-image: image(no-repeat); */
+        background-attachment: fixed;
+    
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 130px;
+        left: 34em;
+        /* border: 2px solid #ccc; */
+        padding: 30px;
+        font-family: 'Architects Daughter';
+        letter-spacing: 1px;
+        word-spacing: 2PX;
+    }
+    
+    form {
+        display: inline-block;
+        width: 360px;
+        height: 390px;
+        padding: 50px;
+        margin: 10px;
+        background:transparent;
+        border: 0px solid #907d4e;
+        border-radius: 15px;
+        position: absolute;
+        z-index: 0;
+        top: -50px;
+        right: 40px;
+        box-shadow: -3px 3px 20px rgb(81, 58, 29),-3px 3px 20px rgb(47, 39, 29),-6px -3px 20px rgb(20, 16, 10),-6px -3px 20px rgb(26, 15, 0),8px -3px 20px rgb(22, 10, 0);
+    }
+    
+    /* form [type="submit"] {
+        display: flex;
+        width: 120px;
+        padding: 6px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        color: black;
+        font-size: 18px;
+        font-weight: bolder;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-transform:capitalize;
+        font-family:'Architects Daughter';  
+        border: none;
+        box-shadow: 2px 3px 10px rgb(0, 0, 0),-6px -3px 20px rgb(10, 2, 17),8px -3px 20px rgb(22, 10, 0);
+        position: relative;
+        left: 25px;
+    } */
+    
+    
+    
+    form [type="submit"] {
+        width: 120px;
+        padding: 6px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        color: black;
+        font-size: 18px;
+        font-weight: bolder;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-transform:capitalize;
+        font-family:'Architects Daughter';  
+        border: none;
+        box-shadow: 2px 3px 10px rgb(42, 13, 150),-6px -3px 20px rgb(10, 2, 17),8px -3px 20px rgb(22, 10, 0);
+        position: relative;
+        left: 30px;
+       
+    } 
+    
+    
+    form [type="button"] {
+        width: 120px;
+        padding: 6px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        color: black;
+        font-size: 18px;
+        font-weight: bolder;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-transform:capitalize;
+        font-family:'Architects Daughter';  
+        border: none;
+        box-shadow: 2px 3px 10px rgb(42, 13, 150),-6px -3px 20px rgb(10, 2, 17),8px -3px 20px rgb(22, 10, 0);
+        position: relative;
+        left: 40px;
+       
+    } 
+    form label{
+        width: 200px;
+        padding: 10px;
+        background: transparent;
+        position: relative;
+        bottom: 10px;
+    }
+    form input{
+        width: 300px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 14px;
+        border: none;
+        font-weight: bold;
+        background:transparent;
+        color: black;
+        
+        box-shadow: -3px 3px 5px rgb(172, 119, 49),-6px -3px 20px rgb(171, 124, 57),8px -3px 20px rgb(22, 10, 0);
+    }
+    form h2 {
+        text-align: center;
+        padding: 1px;
+        font-size: 32px;
+        font-weight: bolder;
+        /* font-language-override: initial;*/
+        font-family: 'Audiowide';
+        position: relative;
+        bottom: 10px;
+        letter-spacing: 2px;
+    }
+    
+    #input_username{
+        padding:12px;
+        height: 20px;
+        width: 300px;
+        font-family:'Macondo';
+        font-weight: 500;
+        font-size: 16px;
+        color: black;
+        letter-spacing: 2px;
+        font-weight: 600;
+        
+        
+    }
+    #password{
+        padding:12px;
+        height: 20px;
+        width: 300px;
+        position:relative;
+        top: 10px;
+        font-family:'Macondo';
+        font-weight: 500;
+        font-size: 16px;
+        color: black;
+        letter-spacing: 2px;
+        font-weight: 600;
+    
+    }
+    #eye{
+        position: relative;
+        top: 12px;
+        right: 40px;
+        height: auto;
+    
+    }
+    #lab_password{
+        position:relative;
+        top: 1px;
+        font-weight: 700;
+        font-size:large
+    }
+    #lab_username{
+        position:relative;
+       
+        font-weight: 700;
+        font-size:large
+    }
+    form button[type="submit"]:hover {
+        background-color: #4305ee;
+    }
+    form button[type="button"]:hover {
+        background-color: #f60000;
+       
+    }
+    a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: 800;
+        text-transform: capitalize;
+        text-shadow:2px 2px 4px rgb(94, 50, 50),-6px -3px 20px rgb(224, 174, 34),8px -3px 20px rgb(22, 10, 0);
+    }
+    p a {
+        text-decoration: none;
+        color: rgb(4, 3, 3);
+        font-weight: 800;
+        font-size: 18PX;
+    
+    }
+    p{
+        font-size:18px; 
+        width: 400px;
+        padding: 10px;
+        font-weight: 600;
+        position: relative;
+        right: 20px;
+    }
+    p a:hover{
+        color: rgb(255, 255, 255);
+        text-decoration:double;
+        margin: 5px;
+        
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url(../img/996402.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-image: image(no-repeat); */
+        background-attachment: fixed;
+    
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 130px;
+        left: 34em;
+        /* border: 2px solid #ccc; */
+        padding: 30px;
+        font-family: 'Architects Daughter';
+        letter-spacing: 1px;
+        word-spacing: 2PX;
+    }
+    
+    form {
+        display: inline-block;
+        width: 360px;
+        height: 390px;
+        padding: 50px;
+        margin: 10px;
+        background:transparent;
+        border: 0px solid #907d4e;
+        border-radius: 15px;
+        position: absolute;
+        z-index: 0;
+        top: -50px;
+        right: 40px;
+        box-shadow: -3px 3px 20px rgb(81, 58, 29),-3px 3px 20px rgb(47, 39, 29),-6px -3px 20px rgb(20, 16, 10),-6px -3px 20px rgb(26, 15, 0),8px -3px 20px rgb(22, 10, 0);
+    }
+    
+    /* form [type="submit"] {
+        display: flex;
+        width: 120px;
+        padding: 6px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        color: black;
+        font-size: 18px;
+        font-weight: bolder;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-transform:capitalize;
+        font-family:'Architects Daughter';  
+        border: none;
+        box-shadow: 2px 3px 10px rgb(0, 0, 0),-6px -3px 20px rgb(10, 2, 17),8px -3px 20px rgb(22, 10, 0);
+        position: relative;
+        left: 25px;
+    } */
+    
+    
+    
+    form [type="submit"] {
+        width: 120px;
+        padding: 6px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        color: black;
+        font-size: 18px;
+        font-weight: bolder;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-transform:capitalize;
+        font-family:'Architects Daughter';  
+        border: none;
+        box-shadow: 2px 3px 10px rgb(42, 13, 150),-6px -3px 20px rgb(10, 2, 17),8px -3px 20px rgb(22, 10, 0);
+        position: relative;
+        left: 30px;
+       
+    } 
+    
+    
+    form [type="button"] {
+        width: 120px;
+        padding: 6px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        color: black;
+        font-size: 18px;
+        font-weight: bolder;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-transform:capitalize;
+        font-family:'Architects Daughter';  
+        border: none;
+        box-shadow: 2px 3px 10px rgb(42, 13, 150),-6px -3px 20px rgb(10, 2, 17),8px -3px 20px rgb(22, 10, 0);
+        position: relative;
+        left: 40px;
+       
+    } 
+    form label{
+        width: 200px;
+        padding: 10px;
+        background: transparent;
+        position: relative;
+        bottom: 10px;
+    }
+    form input{
+        width: 300px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 14px;
+        border: none;
+        font-weight: bold;
+        background:transparent;
+        color: black;
+        
+        box-shadow: -3px 3px 5px rgb(172, 119, 49),-6px -3px 20px rgb(171, 124, 57),8px -3px 20px rgb(22, 10, 0);
+    }
+    form h2 {
+        text-align: center;
+        padding: 1px;
+        font-size: 32px;
+        font-weight: bolder;
+        /* font-language-override: initial;*/
+        font-family: 'Audiowide';
+        position: relative;
+        bottom: 10px;
+        letter-spacing: 2px;
+    }
+    
+    #input_username{
+        padding:12px;
+        height: 20px;
+        width: 300px;
+        font-family:'Macondo';
+        font-weight: 500;
+        font-size: 16px;
+        color: black;
+        letter-spacing: 2px;
+        font-weight: 600;
+        
+        
+    }
+    #password{
+        padding:12px;
+        height: 20px;
+        width: 300px;
+        position:relative;
+        top: 10px;
+        font-family:'Macondo';
+        font-weight: 500;
+        font-size: 16px;
+        color: black;
+        letter-spacing: 2px;
+        font-weight: 600;
+    
+    }
+    #eye{
+        position: relative;
+        top: 12px;
+        right: 40px;
+        height: auto;
+    
+    }
+    #lab_password{
+        position:relative;
+        top: 1px;
+        font-weight: 700;
+        font-size:large
+    }
+    #lab_username{
+        position:relative;
+       
+        font-weight: 700;
+        font-size:large
+    }
+    form button[type="submit"]:hover {
+        background-color: #4305ee;
+    }
+    form button[type="button"]:hover {
+        background-color: #f60000;
+       
+    }
+    a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: 800;
+        text-transform: capitalize;
+        text-shadow:2px 2px 4px rgb(94, 50, 50),-6px -3px 20px rgb(224, 174, 34),8px -3px 20px rgb(22, 10, 0);
+    }
+    p a {
+        text-decoration: none;
+        color: rgb(4, 3, 3);
+        font-weight: 800;
+        font-size: 18PX;
+    
+    }
+    p{
+        font-size:18px; 
+        width: 400px;
+        padding: 10px;
+        font-weight: 600;
+        position: relative;
+        right: 20px;
+    }
+    p a:hover{
+        color: rgb(255, 255, 255);
+        text-decoration:double;
+        margin: 5px;
+        
+    }
+    
+    top: -50px;
+    right: 40px;
+    box-shadow: -3px 3px 20px rgb(81, 58, 29),-3px 3px 20px rgb(47, 39, 29),-6px -3px 20px rgb(20, 16, 10),-6px -3px 20px rgb(26, 15, 0),8px -3px 20px rgb(22, 10, 0);
+}
+
+/* form [type="submit"] {
+    display: flex;
+    width: 120px;
+    padding: 6px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    color: black;
+    font-size: 18px;
+    font-weight: bolder;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-transform:capitalize;
+    font-family:'Architects Daughter';  
+    border: none;
+    box-shadow: 2px 3px 10px rgb(0, 0, 0),-6px -3px 20px rgb(10, 2, 17),8px -3px 20px rgb(22, 10, 0);
+    position: relative;
+    left: 25px;
+} */
+
+
+
+form [type="submit"] {
+    width: 120px;
+    padding: 6px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    color: black;
+    font-size: 18px;
+    font-weight: bolder;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-transform:capitalize;
+    font-family:'Architects Daughter';  
+    border: none;
+    box-shadow: 2px 3px 10px rgb(42, 13, 150),-6px -3px 20px rgb(10, 2, 17),8px -3px 20px rgb(22, 10, 0);
+    position: relative;
+    left: 30px;
+   
+} 
+
+
+form [type="button"] {
+    width: 120px;
+    padding: 6px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    color: black;
+    font-size: 18px;
+    font-weight: bolder;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-transform:capitalize;
+    font-family:'Architects Daughter';  
+    border: none;
+    box-shadow: 2px 3px 10px rgb(42, 13, 150),-6px -3px 20px rgb(10, 2, 17),8px -3px 20px rgb(22, 10, 0);
+    position: relative;
+    left: 40px;
+   
+} 
+form label{
+    width: 200px;
+    padding: 10px;
+    background: transparent;
+    position: relative;
+    bottom: 10px;
+}
+form input{
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    border: none;
+    font-weight: bold;
+    background:transparent;
+    color: black;
+    
+    box-shadow: -3px 3px 5px rgb(172, 119, 49),-6px -3px 20px rgb(171, 124, 57),8px -3px 20px rgb(22, 10, 0);
+}
+form h2 {
+    text-align: center;
+    padding: 1px;
+    font-size: 32px;
+    font-weight: bolder;
+    /* font-language-override: initial;*/
+    font-family: 'Audiowide';
+    position: relative;
+    bottom: 10px;
+    letter-spacing: 2px;
+}
+
+#input_username{
+    padding:12px;
+    height: 20px;
+    width: 300px;
+    font-family:'Macondo';
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 600;
+    
+    
+}
+#password{
+    padding:12px;
+    height: 20px;
+    width: 300px;
+    position:relative;
+    top: 10px;
+    font-family:'Macondo';
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 600;
+
+}
+#eye{
+    position: relative;
+    top: 12px;
+    right: 40px;
+    height: auto;
+
+}
+#lab_password{
+    position:relative;
+    top: 1px;
+    font-weight: 700;
+    font-size:large
+}
+#lab_username{
+    position:relative;
+   
+    font-weight: 700;
+    font-size:large
+}
+form button[type="submit"]:hover {
+    background-color: #4305ee;
+}
+form button[type="button"]:hover {
+    background-color: #f60000;
+   
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    text-transform: capitalize;
+    text-shadow:2px 2px 4px rgb(94, 50, 50),-6px -3px 20px rgb(224, 174, 34),8px -3px 20px rgb(22, 10, 0);
+}
+p a {
+    text-decoration: none;
+    color: rgb(4, 3, 3);
+    font-weight: 800;
+    font-size: 18PX;
+
+}
+p{
+    font-size:18px; 
+    width: 400px;
+    padding: 10px;
+    font-weight: 600;
+    position: relative;
+    right: 20px;
+}
+p a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration:double;
+    margin: 5px;
+    
+}

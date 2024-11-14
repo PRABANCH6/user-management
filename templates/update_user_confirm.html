@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update User</title>
+    <link rel="icons" href="{% static 'img/management.png' %}" type="image/x-icon">
+</head>
+<body>
+    <h1>Update User</h1>
+    <h1>Update User Confirmation</h1>
+    <p>Are you sure you want to upadate the user "{{ user.username }}"?</p>
+    <form action="{% url 'update_user' id=user.id %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Yes, update User</button>
+        <a href="{% url 'home' %}">Cancel</a>
+    </form>
+    {% if messages %}
+    {% for message in messages %}
+        {{ message }}
+    {% endfor %}
+{% endif %}
+</body>
+</html>

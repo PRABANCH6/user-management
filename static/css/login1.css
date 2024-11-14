@@ -1,0 +1,228 @@
+login.css
+*{
+    /* font:900; */
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-family: 'Architects Daughter';  
+    font-weight: bolder;
+    /* font: ; */
+    /* /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* background-image: url('../img/996402.jpeg'); */
+} 
+body {
+    /* font-family: Arial, sans-serif; */
+
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 110px;
+    left: 30em;
+    background-image: url('../img/996402.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background-position: 80%; */
+    background-attachment: fixed;
+    font-size: large;
+    font: 900;
+}
+
+#loginForm {
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    font: bold;
+    width: 410px;
+    height: 400px;
+    margin: 0px;
+    padding: 30px;
+    position: relative;
+    /* left: 10px; */
+    top: 10px;
+    right: 20px;
+    border-radius: 7.5px;
+    box-shadow: 3px 3px 40px rgba(0, 0, 0),
+    -3px -3px 20px rgb(10, 6, 6), -3px 0px 40px rgb(83, 13, 13), 3px 0px 40px rgba(0, 0, 0);
+    letter-spacing: 1px;
+    font-size: 16px;
+    border: 2px solid rgba(147, 140, 112, 0.649) ;
+}
+form p {
+    font-size: 18px;
+    letter-spacing: 0px;
+    position: absolute;
+    top: 305px;
+    left: 40px;
+    font: bolder;
+}
+
+h2 {
+    text-align: center;
+    font-size: x-large;
+    letter-spacing: 3px;
+    font-size: 28px;
+}
+
+label{
+    position: relative;
+    left:30px;
+}
+
+input[type="text"], input[type="password"] {
+    color: #423b3b;
+    width: 100%;
+    padding: 8px;
+    margin: 5px;
+    border: none;
+    border-radius: 4.2px;
+    background-color: #c3a4a4;
+    box-shadow: -3px 3px 20px rgb(0, 0, 0),-6px -3px 20px rgb(10, 2, 17),8px -3px 20px rgb(22, 10, 0);
+}
+/* this login sumbit button */
+form button[type="submit"] {
+    width: 100px;
+    padding: 8px;
+    margin: 5px;
+    border: none;
+    border-radius: 4.2px;
+    background-color: #274ff0;
+    
+    box-shadow: -3px 3px 20px rgb(0, 0, 0),-6px -3px 20px rgb(10, 2, 17),8px -3px 20px rgb(22, 10, 0);
+    color: #000000;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    right: 255px;
+    top:360px;
+    font: 600;
+    font-weight: bolder;
+    
+}
+
+/* this is login reset button */
+form button[type="button"] {
+    width: 100px;
+    padding: 8px;
+    margin: 5px;
+    border: none;
+    border-radius: 4.2px;
+    background-color: #ea1d0e;
+    /* box-shadow: -6px -3px 10px blueviolet; */
+    box-shadow: -3px 3px 20px rgb(0, 0, 0),-6px -3px 20px rgb(10, 2, 17),8px -3px 20px rgb(22, 10, 0);
+    color: #0c0a0a;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    right: 115px;
+    top:360px;
+    font: bolder;
+    font-weight: bolder;
+}
+
+form button[type="submit"]:hover {
+    background-color: #e8b94d;
+}
+form button[type="button"]:hover {
+    background-color: #06f9a0;
+}
+
+
+label{
+    width:100%;
+    padding: 10px;
+    font-size: 18px;
+    background-clip: text;
+    background: linear-gradient(to right, #0e0508, #e8c8b2,#1beb86, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    
+}
+#eye{
+    position: relative;
+    right: 50px;
+    /* left: 50px; */
+    /* top: px; */
+    /* bottom: 40px; */
+    /* right: 45px; */
+    width: 10px;
+    border-radius: 10px;
+}
+
+
+#login_bg{
+    width: 20px;
+    height: 200px;
+    position: absolute;
+    z-index: 0;
+    left: 110px;
+    background-position: cover;
+    }
+    p a{
+        text-decoration: none;
+        color:blue;
+        font-size: 14px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+        position:absolute;
+        top: 50px;
+        font-family: 'Architects Daughter';   
+ }
+#forgot_password{
+    position: absolute;
+    top: 230px; 
+    right: 30px;
+    left: 220px;
+    /* bottom: 1000px; */
+    font-size: 14px;
+    font-weight: bolder;
+    color: blue;
+}
+
+#createe_user{
+    position: absolute;
+    top:230px;
+    right: 140px;
+    left: 70px;   
+    /* bottom: 1000px; */
+    font-size: 14px;
+    font-weight: bolder;
+    color: blue;
+  
+}
+#createe_user a{
+    position: absolute; 
+    left: 0px;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: 'Architects Daughter';  
+    font: 900;
+    
+    
+} p:hover
+p a:hover, 
+#forgot_password:hover,
+#forgot_password a:hover,
+ #createe_user a:hover{
+    color: #edb6c9;
+ 
+}
+
+h2{
+    background: linear-gradient(to right,  #000000 0%,#6fe6ad 50%, #5e5721 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-family: 'Architects Daughter';  
+    font: 900;
+    font-weight: bolder;
+    background-clip: text
+}
+#forget_password a{
+    width: auto;
+    /* text-decoration: none; */
+    color: blue;
+    font-size: 14px;
+    font-weight: bolder;
+    font-family: 'Architects Daughter'; 
+}

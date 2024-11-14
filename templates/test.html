@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Font Awesome CDN for icons -->
+    {% comment %} <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" /> {% endcomment %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css" integrity="sha512-UuQ/zJlbMVAw/UU8vVBhnI4op+/tFOpQZVT+FormmIEhRSCnJWyHiBbEVgM4Uztsht41f3FzVWgLuwzUqOObKw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    {% comment %} Font cdn link {% endcomment %}
+    <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Architects Daughter">
+    <title>LOGIN</title>
+</head>
+<body>
+    {% block content %}
+    <form  id="loginForm" method="POST" validate>
+        <h2> Login</h2>
+        {% csrf_token %}
+        {% if error_message %}
+            <p>{{ error_message }}</p>
+        {% endif %}
+       
+        <label>E-mail<input type="email"  placeholder="Enter E-mail" name="email" required></label>
+        <label>User Name<input type="text" name="username" placeholder="User Name" required></label>
+        <label for="password" >Password
+        <div class="password-container">
+            <input type="password" id="password" placeholder="Password" name="password" required>
+            <i id="eye" class="toggle-password fas fa-eye"></i>
+        </div></label>
+        <p id="forgot_password"><a href="{% url 'password_reset' %}"><b>Forgot Password?</a></b></p>
+        <p id="createe_user"><a href="{% url 'register' %}"><b>Create User </b></a></p>
+        <button type="submit"> Login </button> <button type="button" onclick="ResetForm()"> Reset </button> 
+        {% if messages %}
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+        {% endif %}
+       
+
+      
+    </form>
+    {% endblock %}
+    <script>
+        {% comment %} in_function resetting login form {% endcomment %}
+        function ResetForm() {
+            var form = document.getElementById('loginForm');
+            if (loginForm) {
+                form.reset();
+            } else {
+                console.error("Form not found");
+            }
+        }
+
+        {% comment %} password hide and show {% endcomment %}
+        $(document).ready(function(){
+            $('.toggle-password').on('click', function(){
+                var passwordField = $('#password');
+                var passwordFieldType = passwordField.attr('type');
+                if(passwordFieldType === 'password') {
+                    passwordField.attr('type', 'text');
+                    $(this).removeClass('fa-eye').addClass('fa-eye-slash');
+                } else {
+                    passwordField.attr('type', 'password');
+                    $(this).removeClass('fa-eye-slash').addClass('fa-eye');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/update_user.css' %}">
+    <link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Architects Daughter">
+    <link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Carter One">
+    <link rel="icons" href="{% static 'img/management.png' %}" type="image/x-icon">
+    <title>Update User</title>
+
+</head>
+<body>
+    <div class="user_update">
+        <h1>Update User</h1>
+        <form action="{% url 'update_user' id=user.id %}" method="POST">
+            {% csrf_token %}
+            <label for="username">User Name</label>
+            <input type="text" name="username" placeholder="New Username" value="{{ user.username }}">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="New Email" value="{{ user.email }}">
+            <label for="first_name">First Name</label>
+            <input type="text" name="first_name" placeholder="New First Name" value="{{ user.first_name }}">
+            <label for="last_name">Last Name</label>
+            <input type="text" name="last_name" placeholder="New Last Name" value="{{ user.last_name }}">
+            <button type="submit">Update</button>
+        </form>  
+    <div>  
+    {% if messages %}
+        {% for message in messages %}
+        
+        <span id="messages"> {{ message }}</span>
+
+        {% endfor %}
+    {% endif %}
+   
+</body>
+</html>

@@ -1,0 +1,54 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Architects Daughter">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Carter One">
+    <link rel="stylesheet" href="{% static 'css/contact_us.css' %}">
+    <link rel="icons" href="{% static 'img/management.png' %}" type="image/x-icon">
+</head>
+<body>
+
+    
+        {% include 'user/nav_bar.html' %}
+ 
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>Thank you for your interest in reaching out to us! We're here to assist you with any inquiries or feedback you may have.</p>
+        <p>Please feel free to get in touch using the contact information below, or by filling out the contact form.</p>
+        
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Address:</strong><br>
+          
+            
+            <img id="contact_png" src="{% static 'img/contact_us.png' %}" alt="Phone Icon">
+            <p><strong>Phone:</strong><br>
+            [Your Phone Number]</p>
+
+            <p><strong>Email:</strong><br>
+            [Karthikakumaresan19@gmail.com]</p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="{% url 'contact' %}" method="post">
+                {% csrf_token %}
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4"></textarea><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

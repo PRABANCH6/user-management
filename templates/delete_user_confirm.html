@@ -1,0 +1,33 @@
+<!-- delete_user_confirm.html -->
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/delete_confim_user.css' %}">
+    <title>Delete User Confirmation</title>
+
+</head>
+
+<body>
+    <div class="delete-user">
+        <h1>Delete User Confirmation</h1>
+        <p>Are you sure you want to delete the user "{{ user.username }}"?</p>
+        <form action="{% url 'delete_user' id=user.id %}" method="post">
+            {% csrf_token %}
+            <button type="submit">Yes, Delete User</button>
+            <a href="{% url 'home' %}">Cancel</a>
+        </form>
+    <div>
+    <div class="delete-user-msg messages-for-user-deletion">
+        {% if messages %}
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+        {% endif %}
+    <div>
+</body>
+
+</html>

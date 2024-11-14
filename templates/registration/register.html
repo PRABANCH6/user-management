@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/register.css' %}">
+  <title>registeration</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css"
+    integrity="sha512-UuQ/zJlbMVAw/UU8vVBhnI4op+/tFOpQZVT+FormmIEhRSCnJWyHiBbEVgM4Uztsht41f3FzVWgLuwzUqOObKw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="{% static 'Js/register.js' %}"></script>
+  <link rel="icons" href="{% static 'img/management.png' %}" type="image/x-icon">
+</head>
+
+<body>
+
+
+  <form id="RegisterForm" method="POST" autocomplete="off">
+    {% csrf_token %}
+    <h1>Register</h1>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter username" required>
+    <div id="usernameError" class="error"></div>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter email" required>
+    <div id="emailError" class="error"></div>
+
+    <label for="password">Password:</label>
+    <div class="password-container">
+      <input type="password" id="password" placeholder="Enter Password" name="password" required>
+      <i id="eye" class="toggle-password fas fa-eye"></i>
+    </div>
+    <div id="passwordError" class="error"></div>
+
+    <label for="confirm_password">Confirm Password:</label>
+    <div class="password-container">
+      <input type="password" id="confirm_password" placeholder="Enter confirm Password" name="confirm_password"
+        required>
+      <i id="eye" class="toggle-password fas fa-eye"></i>
+    </div>
+    <div id="confirmPasswordError" class="error"></div>
+
+    <label for="phone_number">Phone Number:</label>
+    <input type="text" id="phone_number" name="phone_number" placeholder="Enter phone number">
+    <div id="phone_numberError" class="error"></div>
+
+
+    <button type="submit">Register</button> <button type="button" onclick="ResetForm()"> Reset </button>
+    <p class="message¸">if you already have an account <a href="{% url 'login' %}">Login</a></p>
+  </form>
+  <script>
+    function ResetForm() {
+      var form = document.getElementById('RegisterForm');
+      form.reset();
+    }
+
+    // Function to toggle password visibility
+    $(document).ready(function () {
+      // Toggle password visibility for both password fields
+      $('.toggle-password').on('click', function () {
+        var passwordFields = $('#password');
+        var passwordFieldType = passwordFields.attr('type');
+
+        if (passwordFieldType === 'password') {
+          passwordFields.attr('type', 'text');
+          $(this).removeClass('fa-eye').addClass('fa-eye-slash');
+        } else {
+          passwordFields.attr('type', 'password');
+          $(this).removeClass('fa-eye-slash').addClass('fa-eye');
+        }
+
+        // Optionally, focus on the first password field after toggling
+        //passwordFields.first().focus();
+      });
+
+      // Toggle password visibility for both confirm password fields
+      $('.toggle-password').on('click', function () {
+        var passwordFields = $('#confirm_password');
+        var passwordFieldType = passwordFields.attr('type');
+
+        if (passwordFieldType === 'password') {
+          passwordFields.attr('type', 'text');
+          $(this).removeClass('fa-eye').addClass('fa-eye-slash');
+        } else {
+          passwordFields.attr('type', 'password');
+          $(this).removeClass('fa-eye-slash').addClass('fa-eye');
+        }
+
+        // Optionally, focus on the first password field after toggling
+        //passwordFields.first().focus();
+      });
+
+      // Function to reset the form
+      function ResetForm() {
+        var form = document.getElementById('RegisterForm');
+        form.reset();
+      }
+    });
+
+
+
+
+  </script>
+</body>
+
+</html>

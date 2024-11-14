@@ -1,0 +1,100 @@
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  background-image: url(../img/table.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Container */
+.container {
+  padding: 20px;
+  /* background-color: #fff; */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 220px;
+  left: 250px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 2px 3px 10px rgb(211, 189, 189),-6px -3px 20px rgb(10, 2, 17),8px -3px 20px rgb(22, 10, 0);
+}
+
+/* Table */
+table {
+  width: 1000px;
+  /* border-collapse: collapse; */
+}
+
+table th, table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Table Head */
+table th {
+  background-color: #f0f0f0;
+  text-align: left;
+}
+
+/* Table Body */
+table td {
+  text-align: left;
+}
+
+/* Buttons */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+button a {
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  bottom: 3px;
+  font-size:12px ;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#add_user{
+  position: relative;
+  /* right:1100px;
+   */
+  
+  left:1200px;
+}
+h1{
+  text-align: center;
+  font-family: 'Carter One';
+}
+svg{
+  position: relative;
+  top: 4px;
+  right:  5px;
+}
+#tb_action{
+  text-align: center;
+}

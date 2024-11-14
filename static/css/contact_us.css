@@ -1,0 +1,119 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/90777.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: large;
+    font: 900;
+    width: auto;
+}
+.container {
+    color: #f9f9f9;
+    width: 900px;
+    height: 1000px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    background: transparent;
+    box-shadow:2px 2px 20px rgb(19, 15, 15),-2px -2px 20px rgb(16, 9, 22),2px -2px 20px rgb(26, 18, 12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Carter One';
+    font-size: 50px;
+    /* text-shadow: 2px 3px 15px rgb(230, 196, 196),-5px -3px 10px rgb(219, 195, 89),8px -3px 10px rgb(64, 30, 4); */
+}
+
+.contact-info {
+    margin-bottom: 30px;
+    position: relative;
+    left: 500px;
+    
+}
+
+h2 {
+    font-family:'Carter One';
+}
+
+.contact-form {
+    margin-top: 30px;
+    position: relative;
+    top: 50px;
+}
+
+.contact-form form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    background:linear-gradient(45deg, rgb(212, 116, 116) 0%, rgb(236, 198, 198) 50%, rgb(203, 35, 35) 100%);
+    color: #191212;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 17px;
+    position: relative;
+    left: 100px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 2px 3px 5px rgb(164, 138, 138),-6px -3px 20px rgb(90, 83, 96),8px -3px 20px rgb(219, 200, 185);
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"]{
+    background: transparent;
+    box-shadow: 2px 3px 5px rgb(0, 0, 0),-6px -3px 20px rgb(90, 83, 96),8px -3px 20px rgb(22, 10, 0);
+    border: none;
+}
+textarea{
+    background: transparent;
+    border: none;
+    box-shadow: 2px 3px 5px rgb(0, 0, 0),-6px -3px 20px rgb(90, 83, 96),8px -3px 20px rgb(22, 10, 0);
+}
+input[type="email"]{
+    background: transparent;
+    border: none;
+    box-shadow: 2px 3px 5px rgb(0, 0, 0),-6px -3px 20px rgb(90, 83, 96),8px -3px 20px rgb(22, 10, 0);
+
+}
+
+#contact_png{
+    width: 350px;
+    position: absolute;
+    z-index: 0;
+    /* bottom: 100px; */
+    top: -10px;
+    left: -500px;
+    
+    /* left: 600px; */
+}

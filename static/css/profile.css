@@ -1,0 +1,83 @@
+.nav_bar{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    height: 60px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 10px rgb(211, 189, 189),-6px -3px 20px rgb(10, 2, 17),8px -3px 20px rgb(22, 10, 0);
+} 
+nav{
+    position:sticky;
+    top: 0;
+}
+body{
+    background-image: url(../img/profile_background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+li{ 
+    display: inline;
+    align-content: space-between;
+    list-style-type: none;
+    justify-content: end;
+    align-items:end;
+    font-style: oblique;
+    padding: 10px;  
+}
+a{
+    /* font-family:'Briem Hands', cursive; */
+    font-family: 'Montserrat Alternates';
+    text-decoration: none;
+    color: rgb(232, 223, 223);
+    font-weight: 900;
+    font-size: 20px;
+    background:linear-gradient(90deg, rgb(228, 17, 17) 0%, rgb(225, 162, 14) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#nav_end a {
+    position: relative;
+    bottom: 10px;
+    right: 20px;
+    width: auto;
+    height: auto;
+}
+span{
+    position: relative;
+    right: 20px;
+    bottom: 3px;
+    height: auto;
+    font-family: 'carter one';
+    font: 900;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+#line{
+    position: relative;
+    right: 10px;
+    bottom: 3px;
+    size: 10px;
+}
+p{
+    font-size: 38px;
+    font-family: 'Permanent Marker';
+}
+strong{ 
+    font-size: 50px;
+    background:linear-gradient(90deg, rgb(154, 197, 0) 0%, rgb(75, 67, 25) 50%, rgb(186, 135, 14) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Carter One';
+}
+#content{
+    font:200;
+    font-size: 20px;
+    font-family: 'Peralta';
+    word-spacing: 3px;
+    letter-spacing: 0.5px;
+    line-height: 2em;
+}

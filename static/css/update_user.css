@@ -1,0 +1,92 @@
+/* Style for Update User Form */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    background-image: url(../img/update_user.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px; 
+    text-shadow: 2px 2px 3px white , 4px -2px 6px rgb(229, 219, 219);
+    font-family: 'Carter One', cursive;
+}
+
+form {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    background: transparent;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+/* 
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color:#fff;
+}
+input{
+    color:white;
+} */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#messages {
+    position: relative;
+    top: 100px;
+    left:530px;
+    font-size: 30px;
+    background:linear-gradient(90deg, rgb(232, 238, 123) 0%, rgb(26, 156, 145) 50%, rgb(249, 176, 5) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Architects Daughter';
+    color: #dc3545; /* Red color for error messages */
+}
+
+.user_update {
+    color: #dc3545; 
+    width: 500px;
+    height: 500px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 2px 3px 20px rgb(211, 189, 189),-6px -3px 20px rgb(10, 2, 17),8px -3px 20px rgb(22, 10, 0);
+    position: relative;
+    top:90px;
+    left:500px;
+    padding:10px;
+    border-radius: 10px;
+}
+input{
+    color:#fff;
+}

@@ -1,0 +1,110 @@
+.nav_bar{
+    display: flex;
+    flex-direction: row;
+
+    align-items: end;
+    width: 100%;
+    height: auto;
+    /* background-color: #e46d6d; */
+    justify-content: end;
+    background: none;
+
+}
+ul{
+    background:none;
+    
+    display: flex;
+    align-content: space-around;
+    list-style-type: none;
+    justify-content: end;
+    align-items:end;
+    align-content: space-between;
+    font-style: normal;
+    /* margin-block-start: 1em; 
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px; */
+   
+}
+li{
+    background: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 0px;
+    justify-content: end;
+    align-items: end;
+    align-content: space-between;
+    font-style: normal;
+    list-style: none;
+    color: rgb(132, 50, 50);
+    font-size: 1.5em;
+    font-family: 'Gruppo', cursive;
+    text-align: center;
+}
+a{
+    background: none;
+    text-decoration: none;
+    color: rgb(226, 209, 209);
+    font-size: 1.5em;
+    font-family: 'Gruppo', cursive;
+}
+
+*{
+    /* background-image: url(../img/front-img.jpg); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+
+}
+body{
+   background-image:  url(../img/png/project-manager1.png);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+
+}
+.login_btn{
+    background: transparent;
+    width: 150px;
+    height: 50px;
+    border-radius: 24px;
+    font-size: 16px;
+    position: relative;
+    top: 730px;
+    left: 500px;
+}
+.login_btn a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#nav_end{
+    background: transparent;   
+
+}
+
+#nav_end:hover li:hover a:hover{
+    text-decoration: underline ;
+    color: rgb(196, 150, 150);
+    font-size: 45px;
+    text-shadow: -3px 3px 20px red;
+
+}
+p{
+    position: absolute;
+    top:250px;
+    width: 1100px;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Gruppo', cursive;
+    color: rgb(221, 167, 4);
+    font-weight: 900;
+    letter-spacing: 1.2PX;
+    text-shadow: 2px 3px 10px rgb(2, 2, 2),-6px -3px 10px rgb(35, 32, 19),8px -3px 10px rgb(66, 57, 50);
+}
+h1{
+    position: absolute;
+    top: 150px;
+   
+
+}

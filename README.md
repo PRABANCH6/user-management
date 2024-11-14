@@ -8,4 +8,3 @@ requirement of this project
   SQLITE3
   BOOTSTRAP
 # user-management
-# user-management

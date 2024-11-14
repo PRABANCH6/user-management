@@ -1,0 +1,16 @@
+body{
+    background-color: antiquewhite;
+}
+.delete-user{
+    padding: 10px ;
+    border-radius: 16px 24px;
+    background-color: blue;
+    /* display: flex; */
+    position: relative;
+    width: auto;
+}
+.delete-user ~ p h1 form{
+    position: relative;
+    left: 100px;
+    width: auto;
+}

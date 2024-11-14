@@ -1,0 +1,45 @@
+{% load static %}
+<link rel="icons" href="{% static 'img/management.png' %}" type="image/x-icon">
+
+{% if user.is_authenticated %}
+    <p>Hello, {{ user.username }}, successfully logged in</p>
+    <h3>User List</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <!-- Add more fields as needed -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+            <tr>
+                <td>{{ user.username }}</td>
+                <td>{{ user.email }}</td>
+                <!-- Add more fields as needed -->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>You are not logged in</p>
+{% endif %}
+
+<body> 
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'contact' %}">Contact Us</a></li> 
+            <li><a href="{% url 'about' %}">About Us</a></li> 
+            <li><a href="{% url 'logout' %}">Logout</a></li>
+        </ul>
+    </nav>
+    {% block content %}
+        {% csrf_token %}
+    
+     
+            {% comment %} {% include 'user_list.html' with users=users %} {% endcomment %}
+        
+    {% endblock %}
+</body>

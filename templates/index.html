@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <title>INDEX</title>
+  </head>
+
+  <body>
+    <!-- <nav class="nav_bar">
+        <ul>
+            <span id="nav_end">
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'register' %}">Register</a></li>
+            </span>
+        </ul>
+    </nav> -->
+    <main>
+      <!-- <h1>Welcome! This is My <span>User Management System..<img src="{% static 'img/ums_profile.png' %}" -->
+      <!-- width="40px"></span></h1> -->
+
+      <div class="container">
+        {% comment %}
+        <img
+          src="{% static 'img/png/project-manager1.png' %}"
+          alt="Management Logo"
+          width="1000px"
+          height="600px"
+        />
+        {% endcomment %}
+        <button class="login_btn"><a href="{% url 'login' %}">login</a></button>
+      </div>
+    </main>
+  </body>
+</html>

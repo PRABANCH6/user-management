@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Font Awesome CDN for icons -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css" integrity="sha512-UuQ/zJlbMVAw/UU8vVBhnI4op+/tFOpQZVT+FormmIEhRSCnJWyHiBbEVgM4Uztsht41f3FzVWgLuwzUqOObKw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    {% comment %} Font cdn link {% endcomment %}
+    <script src="https://kit.fontawesome.com/14215c5eb7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Architects Daughter">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Macondo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+    <title>LOGIN</title>
+    <link rel="icons" href="{% static 'img/management.png' %}" type="image/x-icon">
+</head>
+<body>
+    <script src="{% static 'Js/login.js' %}"></script>
+    
+  
+    <form  id="login-form" action="{% url 'login' %}" method="post">
+        <h2> Login</h2>
+        {% csrf_token %}
+        <label for="username" id="lab_username">User Name</label>
+        <input type="text" name="username" id="input_username" placeholder="Enter User Name" required>
+            <label for="password" id="lab_password">Password</label>
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Enter Password" name="password" required>
+                    <i id="eye" class="toggle-password fas fa-eye"></i>
+                </div>
+        <p id="forgot_password"><a href="{% url 'password_reset' %}"><b>Forgot Password?</a></b></p>
+        
+        <button type="submit"> Login </button> <button type="button" onclick="ResetForm()"> Reset </button> 
+        <p id="createe_user">If you don't have an account  <a href="{% url 'register' %}"><b> Sign up </b></a></p>
+    </form>
+    {% comment %}  if the user is none return the error messages̀ {% endcomment %}
+        
+    <p id="messages">
+    {% if messages %}
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+        {% endif %}
+    </p>
+    <script>
+       
+        {% comment %} in_function resetting login form {% endcomment %}
+        function ResetForm() {
+            var form = document.getElementById('loginForm');
+            if (loginForm) {
+                form.reset();
+            } else {
+                console.error("Form not found");
+            }
+        }
+
+        {% comment %} password hide and show {% endcomment %}
+        $(document).ready(function(){
+            $('.toggle-password').on('click', function(){
+                var passwordField = $('#password');
+                var passwordFieldType = passwordField.attr('type');
+                if(passwordFieldType === 'password') {
+                    passwordField.attr('type', 'text');
+                    $(this).removeClass('fa-eye').addClass('fa-eye-slash');
+                } else {
+                    passwordField.attr('type', 'password');
+                    $(this).removeClass('fa-eye-slash').addClass('fa-eye');
+                }
+            });
+        }); 
+    </script>
+</body>
+</html>
+
+
+        {% comment %} password hide and show {% endcomment %}
+        

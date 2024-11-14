@@ -1,0 +1,197 @@
+body{
+    background:linear-gradient(90deg, rgb(222, 149, 149) 0%, rgb(12, 202, 202) 100%);
+    background-size: cover;
+}
+span{
+  position: absolute;
+  
+  /* bottom: 10px; */
+  /* right: 20px; */
+
+  width: auto;
+  height: auto;
+  font-family: 'Briem Hands', cursive;
+  font: 900;
+  font-size: 20px;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    height: auto;
+    background: transparent;
+    height: 60px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+} 
+li{ 
+    display: inline;
+    align-content: space-between;
+    list-style-type: none;
+    justify-content: end;
+    align-items:end;
+    font-style: oblique;
+    padding: 10px;
+    
+    
+}
+a{
+    font-family:'Briem Hands', cursive;
+    text-decoration: none;
+    color: rgb(232, 223, 223);
+    font-weight: 900;
+    font-size: 20px;
+    padding: 5px;
+    background:linear-gradient(90deg, rgb(230, 91, 91) 0%, rgb(0, 0, 0) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#nav_end a {
+    position: relative;
+    bottom: 10px;
+    right: 20px;
+  
+}
+
+li:hover a:hover{
+    background:linear-gradient(90deg, rgb(201, 162, 162) 0%, rgb(0, 0, 0) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline;
+    
+}
+/* table */
+/* Style the table */
+table {
+    width: 1000px;
+    height: auto    ;
+    border-collapse: collapse;
+    border: 2px double #ddd;
+    position: absolute;
+    top:250px;
+    left: 220px;
+    border-radius: 5px;
+    
+    
+  }
+  
+  /* Style the table header */
+  thead {
+    background-color: #f2f2f2;
+    border: 2px double #ddd;
+    border-radius: 5px;
+    background: transparent;
+    /* backdrop-filter: blur(10px); */
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 3px 20px rgb(200, 179, 179),-6px -3px 20px rgb(122, 79, 160),8px -3px 20px rgb(212, 116, 38);   
+  } 
+  
+  /* Style the table header cells */
+  th {
+    padding: 8px;
+    text-align: left;
+    border: 2px double #ddd;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    align-items: center;
+    box-shadow: 2px 3px 20px rgb(200, 179, 179),-6px -3px 20px rgb(122, 79, 160),8px -3px 20px rgb(212, 116, 38);   
+  }
+  
+  /* Style the table body rows */
+  tbody tr:nth-child(even) {
+    background: transparent;
+    backdrop-filter: blur(10px);
+   
+    border: 2px double #ddd;
+  }
+  
+  /* Style the table body cells */
+  td {
+    padding: 8px;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px double #ddd,2px double #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 3px 20px rgb(200, 179, 179),-6px -3px 20px rgb(122, 79, 160),8px -3px 20px rgb(212, 116, 38);   
+  }
+  
+  /* Hover effect on table rows */
+  tbody tr:hover {
+    background-color: #ddd;
+  }
+  nav:active li:active , a:active{
+    background-color: rgb(214, 207, 207);
+    margin: 5px;
+    padding: 5px;
+    text-decoration: underline;
+    color: rgb(255, 241, 241);
+  } 
+  .container{
+    background: transparent;
+    backdrop-filter: blur(10px);
+  }
+  button{
+    /* display: flex; */
+    width: 80px;
+    height: 25px;
+    align-items: center;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: transparent;
+    position: relative;
+    left: 20px;
+    font-size: 16px;
+    box-shadow: 4px 2px 10px rgb(0, 0, 0),-6px -3px 20px rgb(10, 2, 17),8px -3px 20px rgb(22, 10, 0);
+  }
+  button a {
+    font-family: 'Freeman';
+    font-size: 16px;
+
+  }
+  button:hover {
+    background: linear-gradient(90deg, rgb(201, 162, 162) 0%, rgb(222, 195, 195) 100%);
+    color: #ddd;
+  }
+  button:hover a{
+    color: #ddd;
+    background-color: linear-gradient(90deg, rgb(201, 162, 162) 0%, rgb(239, 193, 193) 100%);
+  }
+  svg{
+    position: relative;
+    top:5px;
+    right: 5px;
+    height: 20px;
+    width: 20px;
+    color: black;   
+    background: transparent;
+
+  }
+  #add_user{
+    position: relative;
+    top: 30px;
+    left:1230px;
+    font-family: 'Freeman';
+    font-size: 20px;
+    width: 140px;
+    height: 35px;
+  }
+  #add_user a{
+    position: relative;
+    bottom: 3px;
+    
+  }
+  #add_user:hover{
+    background: linear-gradient(90deg,  rgb(13, 224, 220) 0%, rgb(70, 107, 186) 100%);
+    color: #ddd;
+    background-color: linear-gradient(90deg, rgb(201, 162, 162) 0%, rgb(0, 0, 0) 100%);
+  }
+  span{
+    position: absolute;
+    /* left: 100px; */
+    right: 100px;
+  }

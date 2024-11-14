@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent Marker">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows Into Light">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amaranth">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Carter One">
+    <link rel="stylesheet" href="{% static 'css/about_us.css' %}">
+</head>
+<body>
+    {% include  'user/nav_bar.html' %}
+    <div class="container">
+        <h1>About Us</h1>
+        <div class="about-content">
+            <p>Welcome to our <strong>User Management Project!</strong></p>
+        </div>
+        <div>
+            <h3>Our Mission</h3>
+            <p>At User Management Project, our mission is to provide a comprehensive and user-friendly platform for managing user accounts efficiently. We aim to simplify the process of user management for businesses and organizations of all sizes, empowering them to effectively organize, monitor, and administer user accounts.</p>
+        </div>
+        <div>
+            <h3>What We Offer</h3>
+            <p><strong>User Management System:</strong> Our platform offers a robust user management system that allows administrators to create, update, and delete user accounts with ease. With customizable user roles and permissions, organizations can maintain strict control over user access to sensitive data and resources.</p>
+            <p><strong>Authentication and Authorization:</strong> We prioritize the security of user accounts by implementing secure authentication mechanisms and fine-grained authorization controls. Through features such as two-factor authentication and password policies, we help organizations protect their data from unauthorized access.</p>
+        </div>
+        <div>
+            <h3>Get In Touch</h3>
+            
+            <p>Have questions or feedback? We'd love to hear from you! Feel free to reach out to our support team at <strong>support@usermanagementproject.com </strong>for assistance or inquiries.</p>
+        </div>
+    </div>
+</body>
+</html>
