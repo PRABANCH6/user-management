@@ -1,6 +1,4 @@
-#!/bin/sh
-'''exec' "/Users/prabanch/Documents/vscode/User Management/env/bin/python3" "$0" "$@"
-' '''
+#!/Users/prabanch/Documents/vscode/git/User_Management/env/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

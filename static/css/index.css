@@ -1,3 +1,4 @@
+
 .nav_bar{
     display: flex;
     flex-direction: row;
@@ -11,8 +12,7 @@
 
 }
 ul{
-    background:none;
-    
+    background:none;  
     display: flex;
     align-content: space-around;
     list-style-type: none;
@@ -50,38 +50,46 @@ a{
     font-family: 'Gruppo', cursive;
 }
 
-*{
-    /* background-image: url(../img/front-img.jpg); */
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-
-}
 body{
-   background-image:  url(../img/png/project-manager1.png);
+   background-image: url(../img/sun\ rice.jpeg);
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-size: cover;
-
+    background-color: antiquewhite;
 }
 .login_btn{
     background: transparent;
-    width: 150px;
+    width: auto;
     height: 50px;
-    border-radius: 24px;
+    padding-bottom: 10px;
+    
+    padding: 15px;
+    border-radius: 25px;
+    /* border: none; */
     font-size: 16px;
+    box-shadow: 2px 2px 15px red , -6px -3px 20px rgb(90, 83, 96),8px -3px 20px rgb(219, 200, 185);
     position: relative;
-    top: 730px;
-    left: 500px;
+    /* top: 700px;
+    
+    left: 500px; */
+}
+.login_btn:hover a:hover{
+    cursor: pointer;
+   
+    color: rgb(226, 182, 87);
 }
 .login_btn a{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Nosifer';
+    position: relative;
+    bottom: 10px;
 }
 
 #nav_end{
     background: transparent;   
 
 }
+
+
 
 #nav_end:hover li:hover a:hover{
     text-decoration: underline ;
@@ -91,20 +99,142 @@ body{
 
 }
 p{
-    position: absolute;
-    top:250px;
-    width: 1100px;
+    position: relative;
+    top: 60px;
+    left: 100px;
+    
     text-align: center;
-    font-size: 1.3em;
+    font-size: 7em;
+    
     font-family: 'Gruppo', cursive;
     color: rgb(221, 167, 4);
     font-weight: 900;
-    letter-spacing: 1.2PX;
+    letter-spacing: 2PX;
     text-shadow: 2px 3px 10px rgb(2, 2, 2),-6px -3px 10px rgb(35, 32, 19),8px -3px 10px rgb(66, 57, 50);
 }
 h1{
     position: absolute;
     top: 150px;
-   
+}
+.log_reg_buttons{
+    background-color: rgb(224, 182, 182);
+    background: transparent;
+    position: relative ;
+    top: 40px;
+    left: 540px;
+    width: 500px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 30px;
+    /* background: transparent; */
+}
+.right_btn{
+    position: relative;
+    left: 10px;
+    background-color: rgb(147, 81, 81);  
+    text-transform: capitalize;
+    
+}
+.left_btn{
+    position: relative;
+    left:4px;
+    background-color: rgb(147, 81, 81);  
+}
 
+
+@media screen and (max-width: 768px) {
+    /* Styles for screens with a maximum width of 768px */
+    .login_btn{
+        position: relative;
+        top: 60px;
+        left: 100px;
+    }
+    .log_reg_buttons{
+        position: relative;
+        top: 60px;
+        left: 100px;
+    }
+    p{
+        position: relative;
+        top: 20px;
+        left: 100px;
+    }
+    .heading{
+        position: relative;
+        top: 50px;
+        left: 1200px;
+        /* left: 100px; */
+        /* right: 500px; */
+        /* left: 0px; */
+        /* right: 700px; */
+        /* font-size: 30px; */
+        text-align: center;
+        font-size: 2em;
+        font-family: 'Gruppo', cursive;
+        color: rgb(221, 167, 4);
+        font-weight: 900;
+        letter-spacing: 2PX;
+        text-shadow: 2px 3px 10px rgb(2, 2, 2),-6px -3px 10px rgb(35, 32, 19),8px -3px 10px rgb(66, 57, 50);
+    }
+} /* Add this closing curly brace at the end */
+
+
+
+@media screen and (max-width: 3840px) {
+    /* Styles for screens with a maximum width of 3840px */
+    .heading{
+        position: relative;
+        top: 50px;
+        left: 1500px;
+        /* left: 100px; */
+        /* right: 500px; */
+        /* left: 0px; */
+        /* right: 700px; */
+        /* font-size: 30px; */
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Gruppo', cursive;
+        color: rgb(221, 167, 4);
+        font-weight: 900;
+        letter-spacing: 2PX;
+        text-shadow: 2px 3px 10px rgb(2, 2, 2),-6px -3px 10px rgb(35, 32, 19),8px -3px 10px rgb(66, 57, 50);
+    }   
+    .container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        top: 100px;
+        right: 1500px;
+        /* left: 400px; */
+        justify-content: center;
+        align-items: center;
+        font-size: 44px;
+    }
+       
+    .login_btn{
+        position: relative;
+        top: 30px;
+        left: 100px;
+    }
+    .log_reg_buttons{
+        position: relative;
+        top: 30px;
+        left: 1470px;
+    }
+    .rigtht_btn{
+        position: relative;
+        left: 2px;
+        background-color: rgb(147, 81, 81);  
+        text-transform: capitalize;
+    }
+    .left_btn{
+        position: relative;
+        /* left:4px; */
+        background-color: rgb(147, 81, 81);  
+    }
+    p{
+        position: relative;
+        top: 20px;
+        left: 100px;
+    }
+    
 }

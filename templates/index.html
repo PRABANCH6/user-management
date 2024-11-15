@@ -5,6 +5,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One"
+      rel="stylesheet"
+    />
     <title>INDEX</title>
   </head>
 
@@ -22,15 +32,29 @@
       <!-- width="40px"></span></h1> -->
 
       <div class="container">
+        <p class="heading">User Management System</p>
+
+        <div class="log_reg_buttons">
+          <button class="login_btn left_btn">
+            <a href="{% url 'login' %}">login</a>
+          </button>
+          <button class="login_btn right_btn">
+            <a href="{% url 'register' %}">register</a>
+          </button>
+        </div>
         {% comment %}
         <img
           src="{% static 'img/png/project-manager1.png' %}"
           alt="Management Logo"
-          width="1000px"
+          width="1400px"
           height="600px"
         />
-        {% endcomment %}
+        {% endcomment %} {% comment %}
         <button class="login_btn"><a href="{% url 'login' %}">login</a></button>
+        <button class="login_btn">
+          <a href="{% url 'register' %}">register</a>
+        </button>
+        {% endcomment %}
       </div>
     </main>
   </body>
