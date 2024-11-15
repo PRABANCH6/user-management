@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <title>Update User</title>
 
 </head>
+
 <body>
     <div class="user_update">
         <h1>Update User</h1>
@@ -25,15 +27,17 @@
             <label for="last_name">Last Name</label>
             <input type="text" name="last_name" placeholder="New Last Name" value="{{ user.last_name }}">
             <button type="submit">Update</button>
-        </form>  
-    <div>  
-    {% if messages %}
-        {% for message in messages %}
-        
-        <span id="messages"> {{ message }}</span>
+            <button id="back" type="button" onclick="location.href='{% url 'users' %}';return false">back</button>
+        </form>
+        <div>
+            {% if messages %}
+            {% for message in messages %}
 
-        {% endfor %}
-    {% endif %}
-   
+            <span id="messages"> {{ message }}</span>
+
+            {% endfor %}
+            {% endif %}
+
 </body>
+
 </html>

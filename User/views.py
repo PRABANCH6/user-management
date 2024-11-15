@@ -203,6 +203,7 @@ def add_user(request):
         password = request.POST['password']
         confirm_password = request.POST['confirm_password']
         phone_number = request.POST['phone_number']
+        date_of_birth = request.POST['date_of_birth']
 
         if password != confirm_password:
             messages.error(request, 'Password do not match')
@@ -216,6 +217,7 @@ def add_user(request):
         obj_add.password = password
         obj_add.confirm_password = confirm_password
         obj_add.phone_number = phone_number
+        obj_add.date_of_birth = date_of_birth
         obj_add.save()
         messages.success(request, 'User added successfully.')
         return redirect('users')

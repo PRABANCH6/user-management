@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,74 +9,87 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Carter One">
     <link rel="stylesheet" href="{% static 'css/user_list.css' %}">
 </head>
+
 <body>
     {% comment %} bootstrap {% endcomment %}
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
     {% comment %} <nav>
         <ul>
             <li><a href="{% url 'home' %}">Home</a></li>
-            <li><a href="{% url 'contact' %}">Contact Us</a></li> 
-            <li><a href="{% url 'about' %}">About Us</a></li> 
+            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+            <li><a href="{% url 'about' %}">About Us</a></li>
             <li id="nav_end" style="float:right"><a href="{% url 'logout' %}" target="_self">Logout</a></li>
             <li id="nav_end" style="float:right"><a href="{% url 'users' %}" target="_self">Users</a></li>
-            {% comment %} <li id="line" style="float:right">|</li> {% endcomment %} 
-            
+            {% comment %} <li id="line" style="float:right">|</li> {% endcomment %}
+
             {% comment %} {% if user.is_authenticated %}
             <span id="nav_end" style="float:right">welcome.! {{ user.username }} 🙋🏼‍♂️</span>
-             {% comment %} <li id="nav_end" >{{ user.username }}</li> {% endcomment %}
-            {% comment %} {% endif %} {% endcomment %} 
-            
-     
-         
-                {% include  'user/nav_bar.html' %}
-      
-
-    <h1>User List</h1>
-    <div> 
-        <button id="add_user"><a href="{% url 'add_user' %}"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-person-add" viewBox="0 0 16 16">
-            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
-            <path d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"/>
-          </svg>Add User</a></button>
-    </div>
-    <div class="container"> 
-        <table>
-            <thead>
-                <tr><th>User_Id</th>
-                    <th>Username</th>
-                    <th>Email</th>
-                    <th>Full Name</th>
-                  
-                    <th id="tb_action" colspan="2">Action</th>
-                    <!-- Add more fields as needed -->
-                </tr>
-            </thead>
-            <tbody>
-                {% for User in user %}
-                <tr>
-                    <td>{{ User.id }}</td>
-                    <td>{{ User.username }}</td>
-                    <td>{{ User.email }}</td>
-                    <td>{{ User.f_name }} {{ User.l_name }}</td>
-                    <td>
-                        <button><a href="{% url 'update_user' id=User.id %}" >update</a></button>
-                    </td>
-                    <td>
-                        {% comment %} <button><a href=delete_user/{{del_user.id}}>delete</a></button> {% endcomment %}
-                        <button><a href="{% url 'delete_user' id=User.id %}">Delete</a></button>
-                        {% comment %} <a href="#"><button>delete</button></a> {% endcomment %}
-                    </td>
+            {% comment %} <li id="nav_end">{{ user.username }}</li> {% endcomment %}
+            {% comment %} {% endif %} {% endcomment %}
 
 
-                    <!-- Add more fields as needed -->
-                </tr>
-                {% endfor %}
-                {% if messages %}
-                {% for message in messages %}
-                    {{ message }}
-                {% endfor %}
-            {% endif %}
-            </tbody>
-        </table>
-    </div>
+
+            {% include 'user/nav_bar.html' %}
+
+
+            <h1>User List</h1>
+            <div>
+                <button id="add_user"><a href="{% url 'add_user' %}"><svg xmlns="http://www.w3.org/2000/svg" width="18"
+                            height="18" fill="currentColor" class="bi bi-person-add" viewBox="0 0 16 16">
+                            <path
+                                d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+                            <path
+                                d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z" />
+                        </svg>Add User</a></button>
+            </div>
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User_Id</th>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Full Name</th>
+                            <th>Date of Birth</th>
+
+                            <th id="tb_action" colspan="2">Action</th>
+                            <!-- Add more fields as needed -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for User in user %}
+                        <tr>
+                            <td>{{ User.id }}</td>
+                            <td>{{ User.username }}</td>
+                            <td>{{ User.email }}</td>
+                            <td>{{ User.f_name }} {{ User.l_name }}</td>
+                            <td>{{ User.date_of_birth }}</td>
+                            <td>
+                                <button><a href="{% url 'update_user' id=User.id %}">update</a></button>
+                            </td>
+                            <td>
+                                <button><a href="{% url 'delete_user' id=User.id %}">Delete</a></button>
+                                {% comment %} <button><a href=delete_user/{{del_user.id}}>delete</a></button> {%
+                                endcomment %}
+
+                                {% comment %} <a href="#"><button>delete</button></a> {% endcomment %}
+                            </td>
+
+
+                            <!-- Add more fields as needed -->
+                        </tr>
+                        {% endfor %}
+                        {% if messages %}
+                        {% for message in messages %}
+                        {{ message }}
+                        {% endfor %}
+                        {% endif %}
+                    </tbody>
+                </table>
+            </div>
 </body>

@@ -2,7 +2,7 @@ from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
 from django.utils import timezone
 
-    
+
 class Contact_Us(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField(max_length=254)
@@ -10,10 +10,11 @@ class Contact_Us(models.Model):
 
     def __str__(self):
         return self.name
-    
+
+
 class user_register(models.Model):
-    username = models.CharField(max_length=100,unique=True)
-    email = models.EmailField(max_length=254,unique=True)
+    username = models.CharField(max_length=100, unique=True)
+    email = models.EmailField(max_length=254, unique=True)
     password = models.CharField(max_length=100,)
     confirm_password = models.CharField(max_length=100)
     phone_number = PhoneNumberField()
@@ -21,7 +22,8 @@ class user_register(models.Model):
 
     def __str__(self):
         return self.username
-    
+
+
 class AddUser(models.Model):
     username = models.CharField(max_length=100)
     f_name = models.CharField(max_length=100)
@@ -31,11 +33,14 @@ class AddUser(models.Model):
     password = models.CharField(max_length=100)
     confirm_password = models.CharField(max_length=100)
     phone_number = PhoneNumberField()
-    
+    date_of_birth = models.DateField()
+
     def __str__(self):
         return self.username
+
     class Meta:
         db_table = 'User_adduser'
+
 
 class UserRegister(models.Model):
     username = models.CharField(max_length=100)
@@ -46,15 +51,14 @@ class UserRegister(models.Model):
 
     def __str__(self):
         return self.username
-    
+
     class Meta:
         db_table = 'User_register'
-    
+
+
 class UserLogin(models.Model):
     username = models.CharField(max_length=100)
     password = models.CharField(max_length=100)
-
-
 
     class Meta:
         db_table = 'User_login'
