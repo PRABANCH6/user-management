@@ -92,4 +92,34 @@
                     </tbody>
                 </table>
             </div>
+            <br>
+
+            <div class="container1">
+                <p> user filter</p>
+                <form action="{% url 'users' %}" method="get">
+                    <input type="text" name="search" placeholder="Search by name">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+
+            <div> filter end</div>
+                {{ for filter in messages %} {{ filter }} {% endfor %}}
+{% comment %} 
+                <div class="pagination">
+                    {% if user.has_previous %}
+                    <a href="?page={{ user.previous_page_number }}">Previous</a>
+                    {% endif %}
+                    <span class="current-page">Page {{ user.number }} of {{ user.paginator.num_pages }}</span>
+                    {% if user.has_next %}
+                    <a href="?page={{ user.next_page_number }}">Next</a>
+                    {% endif %}
+                </div> {% endcomment %}
+
+                
+
+
+                
+              
+                
+            </div>
 </body>

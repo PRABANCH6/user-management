@@ -372,3 +372,45 @@ def login_view(request):
             return redirect('login')
     else:
         return render(request, 'registration/login.html')
+
+
+# def filter_func(request):
+#     query = request.GET.get('query')
+#     if query:
+#         products = Product.objects.filter(
+#             Q(name__icontains=query) | Q(description__icontains=query))
+#     else:
+#         products = Product.objects.all()
+#     return render(request, 'accounts/profile/products.html', {'products': products})
+# @login_required
+# def filter_funcction(request):
+
+
+#     return render(request, 'accounts/profile/user_list.html', {'users': users})
+
+def search(request):
+    search = request.GET.get('search')
+    users = AddUser.objects.all()
+    if search:
+        if users.username == search:
+            messages.success(request, '{{users.username}} found successfully')
+            return render(request, 'accounts/profile/user_list.html', {'users': users})
+        elif users.f_name == search:
+            messages.success(request, '{{users.f_name}} found successfully')
+            return render(request, 'accounts/profile/user_list.html', {'users': users})
+        elif users.l_name == search:
+            messages.success(request, '{{users.l_name}} found successfully')
+            return render(request, 'accounts/profile/user_list.html', {'users': users})
+        elif users.email == search:
+            messages.success(request, '{{users.email}} found successfully')
+            return render(request, 'accounts/profile/user_list.html', {'users': users})
+        elif users.phone_number == search:
+            messages.success(
+                request, '{{users.phone_number}} found successfully')
+            return render(request, 'accounts/profile/user_list.html', {'users': users})
+        elif users.date_of_birth == search:
+            messages.success(
+                request, '{{users.date_of_birth}} found successfully')
+            return render(request, 'accounts/profile/user_list.html', {'users': users})
+
+    return render(request, 'accounts/profile/user_list.html', {'users': users})
